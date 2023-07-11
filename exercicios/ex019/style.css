@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: rgba(63, 236, 172, 0.768);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    color:  rgb(17, 110, 40);
+}
+h1#principal{ color: black;
+    text-align: center;
+    background-color: green;
+
+}
+
+h2{
+    color: rgba(51, 183, 86, 0.858);
+}
+
+.basico{
+    color: darkgreen;
+    font-weight: bold;
+}
+.intermediario{
+    color: darkgoldenrod;
+}
+.avançado{
+    color: brown;
+}
+.destaque{
+    background-color: rgba(189, 150, 52, 0.79);
+}
+/*
+em HTML é id = em CSS é #
+em HTML é class = em CSS é .
+
+*/

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagemPequena.png" type="image/png">
+
+
+        <source media="(max-width: 1050px)" srcset="imagens/imagemMédia.png" type="image/png">
+
+
+        <img src="imagens/imagemGrande.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em html 5.</p>
+
+
+
+    <!--Maneira recomendada,pois,assim é possivel abrir em diferentes formatos,pois o formato pode variar de dispositivo para dispositivo, mas para isso vc precisa ter o audio em diferentes formatos, no entanto, nesse exercício, so temos mp3-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/IHadaFeeling-TrackTribe.mp3" type="audio/mp3">
+
+        <source src="midia/IHadaFeeling-TrackTribe.ogg" type="audio/ogg">
+
+        <source src="midia/IHadaFeeling-TrackTribe.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue baixar o áudio.<a href="midia/IHadaFeeling-TrackTribe.mp3">Cliquye aqui para baixar o arquivo mp3</a></p>
+    </audio>
+</body>
+</html>
