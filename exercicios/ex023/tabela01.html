@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        table{
+            width: 400px;/* definindo a largura das linhas*/
+            padding-left: 10px;
+            border-collapse: collapse;/*serve para as deixar as linhas juntas umas nas outras para ficar mais parecido com tabela*/
+        }
+        tr.linha2{
+            background-color: aqua;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: middle ; /*alinhamento vertical, centralizado== middle*/
+        }
+        td.dado3{
+            background-color: yellow;
+        }
+        .numero{
+            text-align: right; /*podemos personalizar qualquer coisa usando as class*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+     <!--
+            Hierarquia de tableas simples
+            table=tabela
+                table ron = linha de tabela
+                    table header = cabeçalho da tabela
+                    table data= dadoo da tabela
+        -->
+    <table>
+        <tr> <!--Minha primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha2"> <!--segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr><!--terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="dado3">C3</td>
+        </tr>
+        <tr><!--quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="numero">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
