@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de tabela</title>
+    <style>
+        body{
+            font-family:'Times New Roman', Times, serif;
+        }
+        table{
+            width:500px;
+            border-collapse: collapse;
+
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        col.cnome{
+            background-color: chartreuse;
+        }
+        col.csexo{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+            <!--Essa configuração serve para conseguir personalizar uma coluna inteira de uma vez-->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scoop="col">nome</th>
+            <th scoop="col">sexo</th>
+            <th scoop="col">idade</th>
+            <th scoop="col">profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalismo</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalismo</td>
+        </tr>
+        <tr >
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalismo</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalismo</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalismo</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalismo</td>
+        </tr>
+    </table>
+</body>
+</html>
